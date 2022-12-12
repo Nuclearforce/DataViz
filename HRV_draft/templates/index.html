@@ -1,0 +1,48 @@
+{% extends base %}
+
+<!-- goes in body -->
+{% block postamble %}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+{% endblock %}
+
+<!-- goes in body -->
+{% block contents %}
+{{ app_title }}
+
+<br>
+<div class="container">
+  <div class="row">
+    <h1>This is a Tornado backend - holoview (panel) front end</h1>
+    <p>The template is created with jinja2.</p>
+  </div>
+  <div class="row">
+    <div class="col-sm">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Flight delays vs departure times</h5>
+          <p class="card-text">An example of displaying 5.8 million points in a graph using datashader.</p>
+          <a href="http://localhost:5006/datashaders" class="btn btn-primary">Datashader</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Graph with controls</h5>
+          <p class="card-text">An example of updating the graph based on filters or settings.</p>
+          <a href="http://localhost:5006/interactivity" class="btn btn-primary">Interactive</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Streaming cpu and memory usage</h5>
+          <p class="card-text">An example of streaming data to dashboard.</p>
+          <a href="http://localhost:5006/streaming" class="btn btn-primary">Streaming</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
